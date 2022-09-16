@@ -3,6 +3,7 @@ using System;
 using ForApiProject.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ForApiProject.Data.Migrations
 {
     [DbContext(typeof(MarketDBContext))]
-    partial class MarketDBContextModelSnapshot : ModelSnapshot
+    [Migration("20220916110904_addLoginAndPasswordMigration")]
+    partial class addLoginAndPasswordMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

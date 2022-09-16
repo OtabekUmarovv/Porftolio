@@ -13,7 +13,7 @@ namespace ForApiProject.Data.Contexts
     public class MarketDBContext : DbContext
     {
         public MarketDBContext(DbContextOptions<MarketDBContext> options)
-            : base(options)
+            : base(options) 
         {
         }
 

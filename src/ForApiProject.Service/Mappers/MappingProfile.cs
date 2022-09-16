@@ -14,7 +14,8 @@ namespace ForApiProject.Service.Mappers
         public MappingProfile()
         {
             CreateMap<ProductForCreationDto, Product>().ReverseMap();  
-            CreateMap<Category, CategoryForCreationDto>().ReverseMap();
+            CreateMap<CategoryForCreationDto, Category>().ReverseMap();
+            CreateMap<EmployeeForCreationDto, Category>().ReverseMap();
         }
     }
 }
