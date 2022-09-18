@@ -60,5 +60,7 @@ app.MapControllers();
 
 app.Run();
 
-// Salom bolajonlar
 
+
+
+//Salom bolajonlar
